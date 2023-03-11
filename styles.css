@@ -1,0 +1,4 @@
+.btn-info:active,
+.btn-info.active {
+  color: white !important;
+}
