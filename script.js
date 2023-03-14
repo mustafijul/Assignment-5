@@ -28,7 +28,7 @@ function rectangle() {
     document.getElementById("result__rect").style.display = "flex";
     rectangle_res = w * l;
     document.getElementById("result__rect").innerHTML =triangle_res + w * l + "cm²";
-    total = triangle_res + w * l ;
+    total1 = triangle_res + w * l ;
   }
 }
 // parrallelogram
@@ -45,8 +45,8 @@ function parallelogram() {
     let h = document.getElementById("parallelogram_h").value;
     document.getElementById("result__para").style.display = "flex";
     parallelogram_res = b * h;
-    document.getElementById("result__para").innerHTML =total + b * h + "cm²";
-    total2 = b * h + total;
+    document.getElementById("result__para").innerHTML =total1 + b * h + "cm²";
+    total2 = total1 + b * h ;
   }
 }
 
@@ -65,8 +65,8 @@ function Rhombus() {
     let d2 = document.getElementById("Rhombus_d2").value;
     document.getElementById("result__rhom").style.display = "flex";
     Rhombus_res = 0.5*d1*d2;
-    document.getElementById("result__rhom").innerHTML =total2 + 0.5*d1*d2 + "cm²";
-    total3 = Rhombus_res + total2;
+    document.getElementById("result__rhom").innerHTML =0.5*d1*d2 + total2 + "cm²";
+   total3 = 0.5*d1*d2 + total2;
   }
 }
 
@@ -85,8 +85,8 @@ function pentagon() {
     let b = document.getElementById("pentagon_b").value;
     document.getElementById("result__penta").style.display = "flex";
     pentagon_res = p*b ;
-    document.getElementById("result__penta").innerHTML =total3 + p*b + "cm²";
-    total4 = pentagon_res + total3;
+    document.getElementById("result__penta").innerHTML =p*b+ total3 + "cm²";
+    total4 = p*b+ total3;
   }
 }
 
@@ -105,6 +105,6 @@ function ellipse() {
     let b = document.getElementById("ellipse_b").value;
     document.getElementById("result__ellipse").style.display = "flex";
     ellipse_res = 3.14*a*b ;
-    document.getElementById("result__ellipse").innerHTML =total4 + 3.14*a*b + "cm²";
+    document.getElementById("result__ellipse").innerHTML =total4 +3.14*a*b + "cm²";
   }
 }
