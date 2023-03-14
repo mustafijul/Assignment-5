@@ -73,6 +73,22 @@ function Rhombus() {
 // pentagon
 
 
+let pentagon_res = 0;
+function pentagon() {
+  if (
+    document.getElementById("pentagon_p").value <= 0 ||
+    document.getElementById("pentagon_b").value <= 0
+  ) {
+    alert("Please enter a valid number");
+  } else {
+    let p = document.getElementById("pentagon_p").value;
+    let b = document.getElementById("pentagon_b").value;
+    document.getElementById("result__penta").style.display = "flex";
+    pentagon_res = p*b ;
+    document.getElementById("result__penta").innerHTML =total3 + p*b + "cm²";
+    total4 = pentagon_res + total3;
+  }
+}
 
 
 // ellipse
