@@ -73,23 +73,22 @@ function Rhombus() {
 // pentagon
 
 
-let pentagon_res = 0;
-function pentagon() {
-  if (
-    document.getElementById("pentagon_p").value <= 0 ||
-    document.getElementById("pentagon_b").value <= 0
-  ) {
-    alert("Please enter a valid number");
-  } else {
-    let p = document.getElementById("pentagon_p").value;
-    let b = document.getElementById("pentagon_b").value;
-    document.getElementById("result__penta").style.display = "flex";
-    pentagon_res = p*b ;
-    document.getElementById("result__penta").innerHTML =total3 + p*b + "cm²";
-    total4 = pentagon_res + total3;
-  }
-}
 
 
 // ellipse
 
+let ellipse_res = 0;
+function ellipse() {
+  if (
+    document.getElementById("ellipse_a").value <= 0 ||
+    document.getElementById("ellipse_b").value <= 0
+  ) {
+    alert("Please enter a valid number");
+  } else {
+    let a = document.getElementById("ellipse_a").value;
+    let b = document.getElementById("ellipse_b").value;
+    document.getElementById("result__ellipse").style.display = "flex";
+    ellipse_res = 3.14*a*b ;
+    document.getElementById("result__ellipse").innerHTML =total4 + 3.14*a*b + "cm²";
+  }
+}
