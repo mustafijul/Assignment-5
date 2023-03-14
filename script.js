@@ -93,18 +93,3 @@ function pentagon() {
 
 // ellipse
 
-let ellipse_res = 0;
-function ellipse() {
-  if (
-    document.getElementById("ellipse_a").value <= 0 ||
-    document.getElementById("ellipse_b").value <= 0
-  ) {
-    alert("Please enter a valid number");
-  } else {
-    let a = document.getElementById("ellipse_a").value;
-    let b = document.getElementById("ellipse_b").value;
-    document.getElementById("result__ellipse").style.display = "flex";
-    ellipse_res = 3.14*a*b ;
-    document.getElementById("result__ellipse").innerHTML =total4 + 3.14*a*b + "cm²";
-  }
-}
